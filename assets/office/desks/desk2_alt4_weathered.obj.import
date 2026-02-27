@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgyeju54llvgd"
+path="res://.godot/imported/desk2_alt4_weathered.obj-3bb29f77c80c7f80607a1d0224bb0eef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/desk2_alt4_weathered.obj-3bb29f77c80c7f80607a1d0224bb0eef.mesh"]
+
+source_file="res://assets/office/desks/desk2_alt4_weathered.obj"
+dest_files=["res://.godot/imported/desk2_alt4_weathered.obj-3bb29f77c80c7f80607a1d0224bb0eef.mesh", "res://.godot/imported/desk2_alt4_weathered.obj-3bb29f77c80c7f80607a1d0224bb0eef.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

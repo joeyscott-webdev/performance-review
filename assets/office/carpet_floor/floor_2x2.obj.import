@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ewjo78l5r0y4"
+path="res://.godot/imported/floor_2x2.obj-47d7eb33d3ab5b3fc6bb68006afcc68f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_2x2.obj-47d7eb33d3ab5b3fc6bb68006afcc68f.mesh"]
+
+source_file="res://assets/office/carpet_floor/floor_2x2.obj"
+dest_files=["res://.godot/imported/floor_2x2.obj-47d7eb33d3ab5b3fc6bb68006afcc68f.mesh", "res://.godot/imported/floor_2x2.obj-47d7eb33d3ab5b3fc6bb68006afcc68f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

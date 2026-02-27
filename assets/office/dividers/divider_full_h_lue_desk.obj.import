@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://x6dsqd3b5ny0"
+path="res://.godot/imported/divider_full_h_lue_desk.obj-9f59db94da853f835faa31cc8aeb810b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/divider_full_h_lue_desk.obj-9f59db94da853f835faa31cc8aeb810b.mesh"]
+
+source_file="res://assets/office/dividers/divider_full_h_lue_desk.obj"
+dest_files=["res://.godot/imported/divider_full_h_lue_desk.obj-9f59db94da853f835faa31cc8aeb810b.mesh", "res://.godot/imported/divider_full_h_lue_desk.obj-9f59db94da853f835faa31cc8aeb810b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
