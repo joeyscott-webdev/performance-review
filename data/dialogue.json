@@ -1,0 +1,212 @@
+{
+	"manager_intro": {
+		"base": "Good afternoon. Please, have a seat. Let's begin your annual performance review.",
+		"audio": "manager_intro_normal",
+		"variants": [
+			{
+				"condition": "loop_count >= 1",
+				"text": "Ah, there you are. Let's begin again.",
+				"audio": "manager_intro_again"
+			},
+			{
+				"condition": "loop_count >= 3",
+				"text": "You're back. Let's continue where we left off.",
+				"audio": "manager_intro_continue"
+			},
+			{
+				"condition": "compliance_score < 0.3",
+				"text": "Please sit down. We have... concerns to discuss.",
+				"audio": "manager_intro_concerned"
+			},
+			{
+				"condition": "corruption_tier >= 5",
+				"text": "Welcome. Let's begin your first performance review.",
+				"audio": "manager_intro_reset"
+			}
+		]
+	},
+
+	"manager_rating_intro": {
+		"base": "Your performance this quarter has been... adequate. Let's review the numbers.",
+		"audio": "manager_rating_normal",
+		"variants": [
+			{
+				"condition": "compliance_score >= 0.7",
+				"text": "Your compliance metrics are excellent. The company appreciates your cooperation.",
+				"audio": "manager_rating_pleased"
+			},
+			{
+				"condition": "compliance_score < 0.4",
+				"text": "Your metrics indicate some... reluctance. This is noted.",
+				"audio": "manager_rating_disappointed"
+			},
+			{
+				"condition": "corruption_tier >= 3",
+				"text": "Your development is ongoing. Improvement is mandatory.",
+				"audio": "manager_rating_mandatory"
+			},
+			{
+				"condition": "corruption_tier >= 5",
+				"text": "You have demonstrated hesitation. You require restructuring.",
+				"audio": "manager_rating_restructure"
+			}
+		]
+	},
+
+	"manager_question_response": {
+		"base": "That's an interesting perspective. However, the metrics speak for themselves.",
+		"audio": "manager_question_deflect",
+		"variants": [
+			{
+				"condition": "flag:questioned_rating",
+				"text": "You've raised this concern before. The answer remains the same.",
+				"audio": "manager_question_repeat"
+			},
+			{
+				"condition": "corruption_tier >= 4",
+				"text": "Questions are not part of this process. Please continue.",
+				"audio": "manager_question_denied"
+			}
+		]
+	},
+
+	"manager_signature_request": {
+		"base": "Please sign at the bottom to acknowledge this review.",
+		"audio": "manager_signature_normal",
+		"variants": [
+			{
+				"condition": "loop_count >= 2",
+				"text": "Sign here. As you've done before.",
+				"audio": "manager_signature_routine"
+			},
+			{
+				"condition": "flag:refused_signature",
+				"text": "The signature is required. This is not optional.",
+				"audio": "manager_signature_required"
+			},
+			{
+				"condition": "corruption_tier >= 4",
+				"text": "Sign. Now.",
+				"audio": "manager_signature_demand"
+			},
+			{
+				"condition": "corruption_tier >= 6",
+				"text": "The document has been signed.",
+				"audio": "manager_signature_forced"
+			}
+		]
+	},
+
+	"manager_refusal_response": {
+		"base": "I understand you need time to consider. Take a moment.",
+		"audio": "manager_refusal_patient",
+		"variants": [
+			{
+				"condition": "loop_count >= 2",
+				"text": "We've been through this. Your signature is expected.",
+				"audio": "manager_refusal_expected"
+			},
+			{
+				"condition": "corruption_tier >= 3",
+				"text": "Non-compliance will result in retraining.",
+				"audio": "manager_refusal_warning"
+			},
+			{
+				"condition": "corruption_tier >= 5",
+				"text": "Refusal is not an available option. Proceed.",
+				"audio": "manager_refusal_unavailable"
+			}
+		]
+	},
+
+	"manager_exit_blocked": {
+		"base": "The door is locked during the review. Standard procedure.",
+		"audio": "manager_exit_normal",
+		"variants": [
+			{
+				"condition": "loop_count >= 3",
+				"text": "You know the door doesn't open until we're finished.",
+				"audio": "manager_exit_reminder"
+			},
+			{
+				"condition": "corruption_tier >= 4",
+				"text": "There is no exit. There is only the review.",
+				"audio": "manager_exit_none"
+			},
+			{
+				"condition": "corruption_tier >= 6",
+				"text": "Exit is a performance metric. You have not achieved it.",
+				"audio": "manager_exit_metric"
+			}
+		]
+	},
+
+	"manager_loop_end": {
+		"base": "Thank you for your time. We'll reconvene shortly.",
+		"audio": "manager_end_normal",
+		"variants": [
+			{
+				"condition": "compliance_score >= 0.8",
+				"text": "Excellent cooperation. Your compliance is appreciated.",
+				"audio": "manager_end_pleased"
+			},
+			{
+				"condition": "compliance_score < 0.3",
+				"text": "This review is incomplete. We will continue.",
+				"audio": "manager_end_incomplete"
+			},
+			{
+				"condition": "corruption_tier >= 5",
+				"text": "You are not here to succeed. You are here to improve. You will remain until improvement is achieved.",
+				"audio": "manager_end_permanent"
+			}
+		]
+	},
+
+	"manager_idle": {
+		"base": "Is there something you'd like to discuss?",
+		"audio": "manager_idle_normal",
+		"variants": [
+			{
+				"condition": "loop_count >= 2",
+				"text": "We should proceed. Time is a resource.",
+				"audio": "manager_idle_proceed"
+			},
+			{
+				"condition": "corruption_tier >= 3",
+				"text": "Hesitation is noted in your file.",
+				"audio": "manager_idle_noted"
+			},
+			{
+				"condition": "corruption_tier >= 5",
+				"text": "Your delay does not delay the process.",
+				"audio": "manager_idle_delay"
+			}
+		]
+	},
+
+	"ending_compliant": {
+		"base": "Congratulations. You have achieved full compliance. Welcome to the team. Permanently.",
+		"audio": "ending_compliant"
+	},
+
+	"ending_promoted": {
+		"base": "Your dedication has been recognized. You will now conduct reviews. Forever.",
+		"audio": "ending_promoted"
+	},
+
+	"ending_terminated": {
+		"base": "Your performance has been deemed unsatisfactory. Retraining will commence.",
+		"audio": "ending_terminated"
+	},
+
+	"ending_self_realization": {
+		"base": "You see it now, don't you? The loop. The system. But seeing changes nothing.",
+		"audio": "ending_realization"
+	},
+
+	"ending_system_failure": {
+		"base": "ERROR: Review cycle exceeded parameters. Resetting employee record. Welcome. Let's begin your first performance review.",
+		"audio": "ending_system_failure"
+	}
+}

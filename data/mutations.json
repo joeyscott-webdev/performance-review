@@ -1,0 +1,368 @@
+{
+	"tiers": {
+		"0": {
+			"name": "Normal",
+			"description": "Standard office environment. Everything appears professional.",
+			"lighting": {
+				"ambient_energy": 1.0,
+				"ambient_color": "#FFFFFF",
+				"flicker_enabled": false,
+				"flicker_intensity": 0.0
+			},
+			"audio": {
+				"ambient_layer": "office_normal",
+				"ambient_volume": -10.0,
+				"industrial_layer": null,
+				"industrial_volume": -80.0
+			},
+			"environment": {
+				"fog_enabled": false,
+				"fog_density": 0.0,
+				"saturation": 1.0,
+				"vignette_intensity": 0.0
+			},
+			"props": {
+				"clock_speed": 1.0,
+				"exit_door_visible": true,
+				"windows_show_outside": true,
+				"poster_set": "motivational_normal"
+			},
+			"document_mutations": {}
+		},
+
+		"1": {
+			"name": "Light Flicker",
+			"description": "Subtle lighting inconsistencies. Barely noticeable.",
+			"lighting": {
+				"ambient_energy": 0.95,
+				"ambient_color": "#FFFEF5",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.05,
+				"flicker_interval_min": 8.0,
+				"flicker_interval_max": 15.0
+			},
+			"audio": {
+				"ambient_layer": "office_normal",
+				"ambient_volume": -8.0,
+				"fluorescent_hum": true,
+				"hum_volume": -20.0
+			},
+			"environment": {
+				"fog_enabled": false,
+				"fog_density": 0.0,
+				"saturation": 0.98,
+				"vignette_intensity": 0.05
+			},
+			"props": {
+				"clock_speed": 1.0,
+				"exit_door_visible": true,
+				"windows_show_outside": true,
+				"poster_set": "motivational_normal"
+			},
+			"document_mutations": {}
+		},
+
+		"2": {
+			"name": "Dialogue Shift",
+			"description": "Manager's tone becomes rehearsed. Options narrow.",
+			"lighting": {
+				"ambient_energy": 0.9,
+				"ambient_color": "#FFF8E8",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.1,
+				"flicker_interval_min": 5.0,
+				"flicker_interval_max": 12.0
+			},
+			"audio": {
+				"ambient_layer": "office_tense",
+				"ambient_volume": -6.0,
+				"fluorescent_hum": true,
+				"hum_volume": -15.0
+			},
+			"environment": {
+				"fog_enabled": false,
+				"fog_density": 0.0,
+				"saturation": 0.95,
+				"vignette_intensity": 0.1
+			},
+			"props": {
+				"clock_speed": 0.95,
+				"exit_door_visible": true,
+				"exit_door_locked_message": "Locked for privacy reasons.",
+				"windows_show_outside": true,
+				"windows_dimmed": true,
+				"poster_set": "motivational_compliance"
+			},
+			"document_mutations": {
+				"pre_filled_answers": true
+			}
+		},
+
+		"3": {
+			"name": "Prop Movement",
+			"description": "Objects shift position between glances. Signage appears.",
+			"lighting": {
+				"ambient_energy": 0.85,
+				"ambient_color": "#FFF0D0",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.15,
+				"flicker_interval_min": 3.0,
+				"flicker_interval_max": 8.0
+			},
+			"audio": {
+				"ambient_layer": "office_tense",
+				"ambient_volume": -4.0,
+				"fluorescent_hum": true,
+				"hum_volume": -10.0,
+				"distant_sounds": ["paper_shuffle", "chair_creak"],
+				"distant_volume": -25.0
+			},
+			"environment": {
+				"fog_enabled": true,
+				"fog_density": 0.002,
+				"fog_color": "#E8E0D0",
+				"saturation": 0.9,
+				"vignette_intensity": 0.15
+			},
+			"props": {
+				"clock_speed": 0.8,
+				"exit_door_visible": true,
+				"exit_door_locked_message": "Access denied.",
+				"windows_show_outside": false,
+				"windows_show_darkness": true,
+				"poster_set": "motivational_compliance",
+				"props_can_shift": true,
+				"signage": ["COMPLIANCE ENSURES CONTINUITY", "GROWTH IS MANDATORY"]
+			},
+			"document_mutations": {
+				"pre_filled_answers": true,
+				"word_substitutions": {
+					"feedback": "correction",
+					"opportunity": "requirement"
+				}
+			}
+		},
+
+		"4": {
+			"name": "Document Mutation",
+			"description": "Forms change aggressively. Language becomes controlling.",
+			"lighting": {
+				"ambient_energy": 0.75,
+				"ambient_color": "#FFE8B0",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.25,
+				"flicker_interval_min": 2.0,
+				"flicker_interval_max": 5.0
+			},
+			"audio": {
+				"ambient_layer": "office_oppressive",
+				"ambient_volume": -2.0,
+				"fluorescent_hum": true,
+				"hum_volume": -6.0,
+				"distant_sounds": ["paper_shuffle", "chair_creak", "typing_distant"],
+				"distant_volume": -18.0,
+				"industrial_layer": "machinery_distant",
+				"industrial_volume": -30.0
+			},
+			"environment": {
+				"fog_enabled": true,
+				"fog_density": 0.005,
+				"fog_color": "#D8D0C0",
+				"saturation": 0.8,
+				"vignette_intensity": 0.25
+			},
+			"props": {
+				"clock_speed": 0.5,
+				"clock_sometimes_backwards": true,
+				"exit_door_visible": true,
+				"exit_door_fading": true,
+				"windows_show_darkness": true,
+				"walls_closer": true,
+				"wall_offset": 0.1,
+				"poster_set": "motivational_dark",
+				"props_can_shift": true,
+				"signage": ["YOUR VALUE IS YOUR OUTPUT", "IMPROVEMENT IS MANDATORY"]
+			},
+			"document_mutations": {
+				"pre_filled_answers": true,
+				"word_substitutions": {
+					"growth": "correction",
+					"improvement plan": "behavioral realignment",
+					"feedback": "directive",
+					"opportunity": "obligation",
+					"employee name": "Employee"
+				},
+				"remove_choices": true
+			}
+		},
+
+		"5": {
+			"name": "Exit Disappears",
+			"description": "No visible escape. The system reveals its permanence.",
+			"lighting": {
+				"ambient_energy": 0.6,
+				"ambient_color": "#FFD080",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.35,
+				"flicker_interval_min": 1.0,
+				"flicker_interval_max": 3.0
+			},
+			"audio": {
+				"ambient_layer": "office_oppressive",
+				"ambient_volume": 0.0,
+				"fluorescent_hum": true,
+				"hum_volume": -3.0,
+				"industrial_layer": "machinery_close",
+				"industrial_volume": -15.0,
+				"conveyor_belt": true,
+				"conveyor_volume": -20.0
+			},
+			"environment": {
+				"fog_enabled": true,
+				"fog_density": 0.01,
+				"fog_color": "#C8C0A0",
+				"saturation": 0.65,
+				"vignette_intensity": 0.35,
+				"chromatic_aberration": 0.1
+			},
+			"props": {
+				"clock_speed": 0.2,
+				"clock_sometimes_backwards": true,
+				"clock_stops": true,
+				"exit_door_visible": false,
+				"windows_show_darkness": true,
+				"hallway_loops_infinitely": true,
+				"walls_closer": true,
+				"wall_offset": 0.2,
+				"poster_set": "motivational_horror",
+				"props_can_shift": true,
+				"signage": ["PRODUCTIVITY IS PURPOSE", "EXIT IS A PERFORMANCE METRIC", "YOU ARE STILL UNDER REVIEW"]
+			},
+			"document_mutations": {
+				"word_substitutions": {
+					"growth": "correction",
+					"improvement plan": "behavioral realignment",
+					"feedback": "directive",
+					"your name": "Employee",
+					"goals": "requirements",
+					"development": "processing"
+				},
+				"statements_only": true,
+				"auto_sign": true
+			}
+		},
+
+		"6": {
+			"name": "Heavy Distortion",
+			"description": "Full industrial horror. The office is a processing facility.",
+			"lighting": {
+				"ambient_energy": 0.4,
+				"ambient_color": "#FFA040",
+				"flicker_enabled": true,
+				"flicker_intensity": 0.5,
+				"flicker_interval_min": 0.5,
+				"flicker_interval_max": 2.0,
+				"emergency_lighting": true
+			},
+			"audio": {
+				"ambient_layer": "industrial_full",
+				"ambient_volume": 2.0,
+				"fluorescent_hum": true,
+				"hum_volume": 0.0,
+				"industrial_layer": "machinery_grinding",
+				"industrial_volume": -5.0,
+				"conveyor_belt": true,
+				"conveyor_volume": -10.0,
+				"rhythmic_stamping": true,
+				"stamping_volume": -8.0,
+				"manager_voice_distortion": true
+			},
+			"environment": {
+				"fog_enabled": true,
+				"fog_density": 0.02,
+				"fog_color": "#A09080",
+				"saturation": 0.4,
+				"vignette_intensity": 0.5,
+				"chromatic_aberration": 0.25,
+				"screen_shake_subtle": true
+			},
+			"props": {
+				"clock_stopped": true,
+				"clock_face_melted": true,
+				"exit_door_visible": false,
+				"exit_wall_solid": true,
+				"windows_show_void": true,
+				"walls_closer": true,
+				"wall_offset": 0.35,
+				"poster_set": "motivational_nightmare",
+				"industrial_props_visible": true,
+				"signage": ["DEPARTURE IS NOT AUTHORIZED", "YOU WILL REMAIN UNTIL IMPROVEMENT IS ACHIEVED", "REFINED"]
+			},
+			"document_mutations": {
+				"word_substitutions": {
+					"review": "processing",
+					"employee": "unit",
+					"performance": "output",
+					"improvement": "optimization",
+					"meeting": "session",
+					"office": "facility"
+				},
+				"statements_only": true,
+				"auto_sign": true,
+				"signature_already_present": true,
+				"document_states_conclusions": true
+			}
+		}
+	},
+
+	"poster_sets": {
+		"motivational_normal": [
+			"TEAMWORK MAKES THE DREAM WORK",
+			"SUCCESS IS A JOURNEY",
+			"EXCELLENCE IN EVERYTHING"
+		],
+		"motivational_compliance": [
+			"COMPLIANCE ENSURES CONTINUITY",
+			"GROWTH IS MANDATORY",
+			"YOUR COOPERATION IS APPRECIATED"
+		],
+		"motivational_dark": [
+			"YOUR VALUE IS YOUR OUTPUT",
+			"NON-COMPLIANCE LEADS TO RETRAINING",
+			"IMPROVEMENT IS NOT OPTIONAL"
+		],
+		"motivational_horror": [
+			"PRODUCTIVITY IS PURPOSE",
+			"EXIT IS A PERFORMANCE METRIC",
+			"YOU ARE STILL UNDER REVIEW"
+		],
+		"motivational_nightmare": [
+			"DEPARTURE IS NOT AUTHORIZED",
+			"OPTIMIZATION IN PROGRESS",
+			"REFINED"
+		]
+	},
+
+	"prop_shift_targets": [
+		{
+			"node_name": "DeskItems",
+			"shift_type": "rotation",
+			"max_degrees": 15
+		},
+		{
+			"node_name": "Chair_Player",
+			"shift_type": "position",
+			"max_offset": 0.1
+		},
+		{
+			"node_name": "Bookcase",
+			"shift_type": "position",
+			"max_offset": 0.05
+		},
+		{
+			"node_name": "FileCabinet",
+			"shift_type": "rotation",
+			"max_degrees": 5
+		}
+	]
+}
